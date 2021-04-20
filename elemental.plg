@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: elemental - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x1409 /fo"Debug/elementary.res" /d "_DEBUG" "C:\curran\Code\elemental\elementary.rc"" 
+Creating temporary file "C:\DOCUME~1\james\LOCALS~1\Temp\RSP40.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/elemental.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\curran\Code\elemental\main.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\james\LOCALS~1\Temp\RSP40.tmp" 
+Creating temporary file "C:\DOCUME~1\james\LOCALS~1\Temp\RSP41.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/elemental.pdb" /debug /machine:I386 /out:"Debug/elemental.exe" /pdbtype:sept 
+.\Debug\beta.obj
+.\Debug\betai.obj
+.\Debug\dbase.obj
+.\Debug\df.obj
+.\Debug\hotelling.obj
+.\Debug\invert.obj
+.\Debug\lgamma.obj
+.\Debug\lr.obj
+.\Debug\main.obj
+.\Debug\pbeta.obj
+.\Debug\pf.obj
+.\Debug\qbeta.obj
+.\Debug\qf.obj
+.\Debug\stat.obj
+.\Debug\elementary.res
+]
+Creating command line "link.exe @C:\DOCUME~1\james\LOCALS~1\Temp\RSP41.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+C:\curran\Code\elemental\elementary.rc(12) : warning RC4005: 'IDHELP' : redefinition
+Compiling...
+main.c
+c:\curran\code\elemental\main.c(26) : warning C4028: formal parameter 1 different from declaration
+c:\curran\code\elemental\main.c(26) : warning C4028: formal parameter 2 different from declaration
+c:\curran\code\elemental\main.c(121) : warning C4047: '=' : 'int ' differs in levels of indirection from 'struct HWND__ *'
+c:\curran\code\elemental\main.c(123) : warning C4047: 'function' : 'struct HWND__ *' differs in levels of indirection from 'int '
+c:\curran\code\elemental\main.c(123) : warning C4024: 'SendMessageA' : different types for formal and actual parameter 1
+c:\curran\code\elemental\main.c(123) : warning C4047: 'function' : 'unsigned int ' differs in levels of indirection from 'void *'
+c:\curran\code\elemental\main.c(123) : warning C4024: 'SendMessageA' : different types for formal and actual parameter 3
+c:\curran\code\elemental\main.c(124) : warning C4047: 'function' : 'struct HWND__ *' differs in levels of indirection from 'int '
+c:\curran\code\elemental\main.c(124) : warning C4024: 'SetWindowTextA' : different types for formal and actual parameter 1
+c:\curran\code\elemental\main.c(125) : warning C4047: 'function' : 'struct HWND__ *' differs in levels of indirection from 'int '
+c:\curran\code\elemental\main.c(125) : warning C4024: 'SendMessageA' : different types for formal and actual parameter 1
+c:\curran\code\elemental\main.c(148) : warning C4047: 'function' : 'struct HWND__ *' differs in levels of indirection from 'int '
+c:\curran\code\elemental\main.c(148) : warning C4024: 'SetWindowTextA' : different types for formal and actual parameter 1
+c:\curran\code\elemental\main.c(153) : warning C4047: 'function' : 'struct HWND__ *' differs in levels of indirection from 'int '
+c:\curran\code\elemental\main.c(153) : warning C4024: 'SetWindowTextA' : different types for formal and actual parameter 1
+c:\curran\code\elemental\main.c(163) : warning C4047: 'function' : 'unsigned long ' differs in levels of indirection from 'void *'
+c:\curran\code\elemental\main.c(163) : warning C4024: 'WinHelpA' : different types for formal and actual parameter 4
+c:\curran\code\elemental\main.c(183) : warning C4133: 'function' : incompatible types - from 'struct HDC__ *' to 'struct HWND__ *'
+Linking...
+
+
+
+<h3>Results</h3>
+elemental.exe - 0 error(s), 19 warning(s)
+</pre>
+</body>
+</html>

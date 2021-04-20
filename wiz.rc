@@ -1,0 +1,11 @@
+DIALOG_1 DIALOG DISCARDABLE  21, 26, 332, 173
+STYLE DS_MODALFRAME | WS_OVERLAPPED | WS_CAPTION | WS_VISIBLE | WS_SYSMENU
+CAPTION "Database Wizard"
+FONT 8, "Helv"
+BEGIN
+	CONTROL "Back",                                           100, "BUTTON", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 28, 138, 79, 20
+	CONTROL "Next",                                           102, "BUTTON", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 116, 138, 79, 20
+	CONTROL "Cancel",                                         104, "BUTTON", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 207, 138, 79, 20
+	CONTROL "This database contains the following elements:", 105, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 23, 9, 204, 17
+END
+

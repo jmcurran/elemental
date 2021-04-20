@@ -1,0 +1,46 @@
+/****************************************************************************
+
+
+ELEMENTARY.RC
+
+
+*****************************************************************************/
+
+#include <windows.h>
+#include "rc.h"
+
+#define IDHELP 1038
+
+IDM_MAIN MENU 
+{
+ POPUP "File"
+ {
+  MENUITEM "Open ...", MAIN_FILE_OPEN
+  MENUITEM SEPARATOR
+  MENUITEM "Exit", MAIN_FILE_EXIT
+ }
+ POPUP "Help"
+ {
+  MENUITEM "Contents", IDM_CONTENTS
+  MENUITEM "Search for Help on ...", IDM_SEARCH
+  MENUITEM "How to Use Help", IDM_HELPHELP
+  MENUITEM SEPARATOR
+  MENUITEM "About Elementary (Modified) v2.0 ...", IDM_ABOUT
+ }
+}
+
+LOGO BITMAP logo.bmp
+IDI_AELT ICON element.ico
+
+ABOUT_DLG DIALOG DISCARDABLE  20, 40, 208, 81
+STYLE DS_MODALFRAME | WS_OVERLAPPED | WS_CAPTION | WS_VISIBLE | WS_SYSMENU
+CAPTION "About Elementary v21.0"
+FONT 8, "MS Sans Serif"
+BEGIN
+        CONTROL "Elementary (Modified) v2.0",                                   -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 9, 4, 48, 8
+        CONTROL "(C) 1998-2005 James M. Curran",                          -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 9, 26, 83, 8
+        CONTROL "E-Mail bug reports to: curran@stat.auckland.ac.nz", -1, "STATIC", SS_LEFTNOWORDWRAP | WS_CHILD | WS_VISIBLE, 9, 48, 166, 8
+        CONTROL "OK",                                                IDOK, "BUTTON", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 155, 17, 40, 14
+END
+
+
